@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+html {
+  background-color: #4E9525;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #2E5A1C;
 }
 
-.App-link {
-  color: #61dafb;
+.header h1 {
+  color: #FF5C00;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header a {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1rem;
+  border: 1px solid #fff;
+  color: #fff;
 }
+
+.header a:hover {
+  color: #FF5C00;
+}
+
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.header__navigation--about {
+  margin-left: 2rem;
+}
+
+.form {
+  background-color: #4E9525;
+  padding: 2rem;
+}
+
+.form input,
+.form select,
+.form button {
+  margin: 0.25rem;
+  width: 100%;
+}
+
+.form__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.songlist {
+  background-color: #4e9525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.songlist__artist {
+  padding-right: 1rem;
+}
+
+.songlist table {
+  text-align: left;
+}
+
+.songlist table th,
+.songlist table td {
+  padding-bottom: 1rem;
+}
+/*# sourceMappingURL=App.css.map */

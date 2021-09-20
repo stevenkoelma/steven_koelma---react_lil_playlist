@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #2e5a1c;
+
+  h1 {
+    color: #ff5c00;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1rem;
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:hover {
+      color: #ff5c00;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    &--about {
+      margin-left: 2rem;
+    }
+  }
+}
